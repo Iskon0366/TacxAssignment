@@ -4,13 +4,20 @@ import com.tacx.pages.*;
 import com.tacx.utilities.BrowserUtils;
 import com.tacx.utilities.ConfigurationReader;
 import com.tacx.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.beans.PropertyChangeListener;
 
 public class CreateWorkout {
-
+    Actions actions;
     LoginPage loginPage = new LoginPage();
     SignupPage signupPage = new SignupPage();
     DashboardPage dashboardPage = new DashboardPage();
@@ -29,6 +36,7 @@ public class CreateWorkout {
     public void select_create_account_option() {
 
         loginPage.createAccountButton.click();
+        Assert.assertEquals("Verify the url is https://cloud.tacx.com/#/signup","https://cloud.tacx.com/#/signup",Driver.get().getCurrentUrl());
     }
 
     @Then("Enter details and click on sign up button to create new Tacx account")
@@ -56,20 +64,31 @@ public class CreateWorkout {
     @Then("Select “Create workout” menu item from left pane in dashboard")
     public void select_create_workout_menu_item_from_left_pane_in_dashboard() {
         dashboardPage.createWorkoutMenuItem.click();
+        Assert.assertEquals("Verify the title is Create","Create",createWorkoutPage.h2TitleCreate.getText());
+        Assert.assertEquals("Verify the middle title is CREATE WORKOUT","CREATE WORKOUT",createWorkoutPage.middleTitleCreateWorkout.getText());
 
     }
 
     @Then("Select Power workout and then select distance as target and then select continue")
     public void select_power_workout_and_then_select_distance_as_target_and_then_select_continue() {
+
         BrowserUtils.waitForClickablility(createWorkoutPage.powerWOType,2);
+        Assert.assertEquals("Verify the middle title CHOOSE TYPE","CHOOSE TYPE",createWorkoutPage.middleTitleChooseType.getText());
         createWorkoutPage.powerWOType.click();
+
         BrowserUtils.waitForClickablility(createWorkoutPage.distanceTargetType,2);
+        Assert.assertEquals("Verify the middle title CHOOSE TARGET","CHOOSE TARGET",createWorkoutPage.middleTitleChooseTarget.getText());
         createWorkoutPage.distanceTargetType.click();
+
         BrowserUtils.waitForClickablility(createWorkoutPage.continueButton,2);
         createWorkoutPage.continueButton.click();
+
     }
+
     @Then("Set distance to {double} KM and save the workout with title name {string}")
     public void setDistanceToKMAndSaveTheWorkoutWithTitleName(double wantedDist, String title) {
+
+        Assert.assertEquals("Verify the Url https://cloud.tacx.com/#/create/editor/","https://cloud.tacx.com/#/create/editor/",Driver.get().getCurrentUrl());
 
         String distanceValueText = create.distanceValue.getText().split(" ")[0];
         System.out.println("distanceValueText = " + distanceValueText);
@@ -102,6 +121,9 @@ public class CreateWorkout {
         BrowserUtils.waitForInvisibility(workoutsPage.svgCircle,10);
         System.out.println("workoutsPage.newWorkoutName.getText() = " + workoutsPage.newWorkoutName.getText());
         Assert.assertEquals(titleCheck,workoutsPage.newWorkoutName.getText());
+        Assert.assertEquals("Verify the title is Workouts","Workouts",workoutsPage.h2WorkoutsTitle.getText());
+        Assert.assertEquals("Verify the dropdown menu name is My workouts","MY WORKOUTS",workoutsPage.myWorkoutsButton.getText());
+
     }
 
     @Then("Logout from Account")
@@ -112,4 +134,43 @@ public class CreateWorkout {
     }
 
 
+    @When("User enter the same credentials")
+    public void userEnterTheSameCredentials() {
+        loginPage.emailLoginBox.sendKeys(ConfigurationReader.get("UserEmail"));
+        loginPage.passwordLoginBox.sendKeys(ConfigurationReader.get("UserPassword"),Keys.ENTER);
+        BrowserUtils.waitForInvisibility(signupPage.loadingIndicator, 15);
+    }
+
+    @Then("User right click on the arrow up button")
+    public void userRightClickOnTheArrowUpButton() {
+
+        actions = new Actions(Driver.get());
+        actions.contextClick(create.distanceArrowUp).perform();
+        actions.moveToElement(create.distanceArrowUp).pause(2).contextClick(create.distanceArrowUp).perform();
+        BrowserUtils.waitFor(2);
+        actions.sendKeys(Keys.ESCAPE).perform();
+
+        }
+
+
+    @And("Enter invalid name and others and click on sign up button to create new Tacx account")
+    public void enterInvalidNameAndOthersAndClickOnSignUpButtonToCreateNewTacxAccount() {
+        signupPage.firstNameSignupTBox.sendKeys(ConfigurationReader.get("InvalidUserName"));
+        signupPage.emailSignupTBox.sendKeys(ConfigurationReader.get("UserEmail2"));
+        signupPage.passwordSignupTBox.sendKeys(ConfigurationReader.get("UserPassword2"));
+        signupPage.repeatPasswordSignupTBox.sendKeys(ConfigurationReader.get("UserPassword2"));
+        signupPage.acceptTermsCBox.click();
+        signupPage.confirmAgeCBox.click();
+        signupPage.signupButton.click();
+
+        BrowserUtils.waitForInvisibility(signupPage.loadingIndicator, 15);
+    }
+
+    @Then("User should be not create a new account and be given a warning")
+    public void userShouldBeNotCreateANewAccountAndBeGivenAWarning() {
+
+        Assert.assertTrue(signupPage.errorMessage.isDisplayed());
+        Assert.assertEquals("Verify the error message","There was an error communicating with the server.",signupPage.errorMessage.getText());
+
+    }
 }

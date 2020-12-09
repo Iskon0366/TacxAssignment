@@ -21,6 +21,9 @@ public class Create extends BasePage{
     public WebElement workoutTitleTBox;
 
     @FindBy(xpath = "//button[@ng-click='vm.confirmDialog()']")
-    public WebElement dialogBoxSaveButton;
+    public WebElement dialogBoxSaveButton; //I click with Enter
+
+
+
 
 }

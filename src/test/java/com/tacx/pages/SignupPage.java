@@ -2,6 +2,7 @@ package com.tacx.pages;
 
 import com.tacx.utilities.Driver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -36,6 +37,10 @@ public class SignupPage {
     public WebElement returnThePageButton;
 
     @FindBy(css = "div.loading-indicator")
+    @CacheLookup
     public WebElement loadingIndicator;
+
+    @FindBy(css = "#errorMessage")
+    public WebElement errorMessage;
 
 }

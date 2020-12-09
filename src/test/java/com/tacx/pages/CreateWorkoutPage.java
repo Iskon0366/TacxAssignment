@@ -23,4 +23,16 @@ public class CreateWorkoutPage extends BasePage{
     @FindBy(css = "section.continue-button>button")
     public WebElement continueButton;
 
+    @FindBy(xpath = "//h2[@class='page-title ng-binding flex']")
+    public WebElement h2TitleCreate;
+
+    @FindBy(xpath = "//h2[@class='md-title create-workout-title']")
+    public WebElement middleTitleCreateWorkout;
+
+    @FindBy(xpath = "(//h3)[1]")
+    public WebElement middleTitleChooseType;
+
+    @FindBy(xpath = "(//h3)[2]")
+    public WebElement middleTitleChooseTarget;
+
 }
