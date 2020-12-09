@@ -1,0 +1,14 @@
+com/tacx/runners/FailedRunner.class
+com/tacx/utilities/ConfigurationReader.class
+com/tacx/pages/BasePage.class
+com/tacx/utilities/BrowserUtils.class
+com/tacx/pages/DashboardPage.class
+com/tacx/pages/CreateWorkoutPage.class
+com/tacx/stepdefinitions/CreateWorkout.class
+com/tacx/pages/Create.class
+com/tacx/utilities/Driver.class
+com/tacx/pages/SignupPage.class
+com/tacx/stepdefinitions/Hooks.class
+com/tacx/runners/CukesRunner.class
+com/tacx/pages/WorkoutsPage.class
+com/tacx/pages/LoginPage.class
