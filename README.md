@@ -66,7 +66,7 @@ If I have a Jenkins runnning on an EC2 machine I can use that IP and port number
      - [java -jar jenkins.war -httpPort=8080 --enable-future-java] -> Jenkins will start to listen localhost:8080 port
    - 
 
-
+mvn verify -Dcucumber.options=“--tags @smoke” -Dbrowser=firefox 
 
 ![GitHub Logo]()
 Format: ![Alt Text](url)
