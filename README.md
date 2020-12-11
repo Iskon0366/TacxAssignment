@@ -30,8 +30,6 @@ Maven surefire plugin | To manage runner classes/execute tests in parallel struc
 ### Design :
 #### Page Object Model Design Pattern
 
-
-
 Design of the framework is POM and Cucumber Behavior Driven Development framework. 
 
 Basically I create Page Object Java Classes in **pages** directory and each class represents a page in the application. 
