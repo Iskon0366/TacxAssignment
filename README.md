@@ -44,7 +44,7 @@ I am using Selenium Webdriver in order to interact with browsers. For assertions
 
 
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo]()
 Format: ![Alt Text](url)
 
 http://github.com - automatic!
