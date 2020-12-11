@@ -2,6 +2,7 @@
 /Users/macbookair/Desktop/javaEU2/TacxAssignment/src/test/java/com/tacx/utilities/Driver.java
 /Users/macbookair/Desktop/javaEU2/TacxAssignment/src/test/java/com/tacx/pages/SignupPage.java
 /Users/macbookair/Desktop/javaEU2/TacxAssignment/src/test/java/com/tacx/pages/CreateWorkoutPage.java
+/Users/macbookair/Desktop/javaEU2/TacxAssignment/src/test/java/com/tacx/stepdefinitions/TacxApiCollection.java
 /Users/macbookair/Desktop/javaEU2/TacxAssignment/src/test/java/com/tacx/pages/DashboardPage.java
 /Users/macbookair/Desktop/javaEU2/TacxAssignment/src/test/java/com/tacx/pages/BasePage.java
 /Users/macbookair/Desktop/javaEU2/TacxAssignment/src/test/java/com/tacx/runners/CukesRunner.java

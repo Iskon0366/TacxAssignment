@@ -1,7 +1,7 @@
 @integration
 Feature:Create a workout
 
-  @createNewUser
+  @smoke @createNewUser @maximize
   Scenario:User should able create an account and create a workout
     Given Launch any browser and navigate to site
     And Select Create Account option
@@ -13,7 +13,7 @@ Feature:Create a workout
     Then navigate to “Workouts” menu item and verify the created new Workout with mentioned title name
     And Logout from Account
 
-  @loginWithSameUser
+  @loginWithSameUser @maximize
   Scenario: User should  with same credentials and double click on arrows
     Given Launch any browser and navigate to site
     When User enter the same credentials
@@ -25,10 +25,10 @@ Feature:Create a workout
     Then navigate to “Workouts” menu item and verify the created new Workout with mentioned title name
     And Logout from Account
 
-    @createNewUserInvalidName @wip
-    Scenario: User should not able to create an account with invalid name
-      Given Launch any browser and navigate to site
-      And Select Create Account option
-      And Enter invalid name and others and click on sign up button to create new Tacx account
-      Then User should be not create a new account and be given a warning
+  @createNewUserInvalidName @wipUI @maximize
+  Scenario: User should not able to create an account with invalid name
+    Given Launch any browser and navigate to site
+    And Select Create Account option
+    And Enter invalid name and others and click on sign up button to create new Tacx account
+    Then User should be not create a new account and be given a warning
 

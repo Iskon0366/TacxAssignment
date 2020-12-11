@@ -12,10 +12,6 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeListener;
-
 public class CreateWorkout {
     Actions actions;
     LoginPage loginPage = new LoginPage();
@@ -173,4 +169,6 @@ public class CreateWorkout {
         Assert.assertEquals("Verify the error message","There was an error communicating with the server.",signupPage.errorMessage.getText());
 
     }
+
+
 }

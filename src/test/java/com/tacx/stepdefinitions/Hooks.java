@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 
-    @Before
+    @Before("@maximize")
     public void setUp(){
 
         Driver.get().manage().window().maximize();
@@ -19,7 +19,7 @@ public class Hooks {
 
     }
 
-    @After
+    @After("@maximize")
     public void tearDown(Scenario scenario){
 
         if (scenario.isFailed()){

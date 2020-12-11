@@ -4,6 +4,7 @@ com/tacx/pages/BasePage.class
 com/tacx/utilities/BrowserUtils.class
 com/tacx/pages/DashboardPage.class
 com/tacx/pages/CreateWorkoutPage.class
+com/tacx/stepdefinitions/TacxApiCollection.class
 com/tacx/stepdefinitions/CreateWorkout.class
 com/tacx/pages/Create.class
 com/tacx/utilities/Driver.class
