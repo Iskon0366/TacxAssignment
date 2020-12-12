@@ -70,7 +70,7 @@ If I have a Jenkins runnning on an EC2 machine I can use that IP and port number
    - Click ``New Item`` to create a Freestyle Project click ``OK``.
    - It opens the configure page.
    - In ``Source Code Management`` click ``Git`` radio button and provide the github repo in``Repositories``, credentials in ``Credentials`` and branch in ``Branches`` to build.
-   - We can add a ``Build Triggers`` if we want to but this project I didn't add (E.g. ``Build periodically`` ->Everyday at 08:00 ->```H 8 * * *```)
+   - We can add ``Build Triggers`` if we want, but this project I didn't add (E.g. ``Build periodically`` ->Everyday at 08:00 ->```H 8 * * *```)
    - In ``Build`` I added ``Invoke top-level Maven target`` plugin to run my framework with a maven command -> ```verify```
    - In ``Post-build Actions`` I added ``Cucumber Reports`` and ``Editable Email Notification`` plugins.
      - In ``Editable Email Notification`` plugin, I added email in ``Project Recipient List`` to send notifications for test results.
