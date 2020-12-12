@@ -96,9 +96,12 @@ If I have a Jenkins runnning on an EC2 machine I can use that IP and port number
 
 At the end click to ```SAVE``` it 
 
-Go to ```Dashboard``` and click on the Jenkins job -> click ```Build``` now, Jenkins will run it and I can see Console Output and Cucumber results at the end of execution.
+Go to ```Dashboard``` and click on the Jenkins job -> click ```Build now```, Jenkins will run it and I can see Console Output and Cucumber results at the end of execution.
 
 
 When I want to run in a different way, I don't need to change my scripts. I can change only run command in ``Invoke top-level Maven target``. For example :
 
 * ```mvn verify -Dcucumber.options=“--tags @smoke” -Dbrowser=firefox ```
+
+
+
