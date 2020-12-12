@@ -1,4 +1,4 @@
-@integration
+@integration @wipUI
 Feature:Create a workout
 
   @smoke @createNewUser @maximize
@@ -14,7 +14,7 @@ Feature:Create a workout
     And Logout from Account
 
   @loginWithSameUser @maximize
-  Scenario: User should  with same credentials and double click on arrows
+  Scenario: User should login  with same credentials and double click on arrows
     Given Launch any browser and navigate to site
     When User enter the same credentials
     Then Verify the URL in App dashboard
@@ -25,7 +25,7 @@ Feature:Create a workout
     Then navigate to “Workouts” menu item and verify the created new Workout with mentioned title name
     And Logout from Account
 
-  @createNewUserInvalidName @wipUI @maximize
+  @createNewUserInvalidName  @maximize
   Scenario: User should not able to create an account with invalid name
     Given Launch any browser and navigate to site
     And Select Create Account option

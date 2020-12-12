@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.tacx.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 89.088 s <<< FAILURE! - in com.tacx.runners.CukesRunner
+GET single employee(Tacx API Collection Tests)  Time elapsed: 0.935 s  <<< FAILURE!
+java.lang.AssertionError: Verify status code expected:<200> but was:<429>
+
+User should not able to create an account with invalid name(Create a workout)  Time elapsed: 25.642 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#errorMessage"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-van-Macbook.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/hw/3v5b4b751n9...}, goog:chromeOptions: {debuggerAddress: localhost:50538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2fffe4b7a063384256cad2e97dcddfe1
+*** Element info: {Using=css selector, value=#errorMessage}
+

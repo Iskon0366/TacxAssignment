@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>11 Dec 2020, 14:47</td>
+      <td>12 Dec 2020, 02:53</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@maximize</td>
-          <td      class="passed"    >24</td>
-          <td      class="failed"    >2</td>
+          <td      class="passed"    >21</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">26</td>
+          <td class="total">22</td>
 
           <td  class="passed"    >2</td>
-          <td  class="failed"    >2</td>
-          <td class="total">4</td>
+          <td  class="failed"    >1</td>
+          <td class="total">3</td>
 
-          <td class="duration" data-value="74403000000">1:14.403</td>
+          <td class="duration" data-value="68023000000">1:8.023</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -173,27 +173,28 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1_1006545627.html">Blabla</a>
+      <a href="report-feature_1_578669140.html">Create a workout</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2975190419.html">@integration</a>
-       <a href="report-tag_2368634098.html">@createNewUserInvalidName</a>
        <a href="report-tag_4092886705.html">@wipUI</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_3948266670.html">@createNewUser</a>
        <a href="report-tag_2851644171.html">@maximize</a>
 </div>
 
 
-  <span class="lead-duration duration">21.146</span>
+  <span class="lead-duration duration">29.357</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">User should not able to create an account with invalid name</span>
+  <span class="name">User should able create an account and create a workout</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -202,7 +203,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -224,7 +225,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.tacx.stepdefinitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">3.619</span>
+  <span class="lead-duration duration">4.466</span>
 
           </div>
 
@@ -241,9 +242,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -253,7 +254,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -261,7 +262,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Launch any browser and navigate to site</span>
 
-  <span class="lead-duration duration">2.527</span>
+  <span class="lead-duration duration">3.254</span>
 
 </div>
 
@@ -288,295 +289,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Select Create Account option</span>
 
-  <span class="lead-duration duration">0.164</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Enter invalid name and others and click on sign up button to create new Tacx account</span>
-
-  <span class="lead-duration duration">8.400</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">User should be not create a new account and be given a warning</span>
-
-  <span class="lead-duration duration">10.055</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#errorMessage&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-van-Macbook.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/hw/3v5b4b751n9...}, goog:chromeOptions: {debuggerAddress: localhost:56286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
-*** Element info: {Using=css selector, value=#errorMessage}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
-	at com.tacx.stepdefinitions.CreateWorkout.userShouldBeNotCreateANewAccountAndBeGivenAWarning(CreateWorkout.java:168)
-	at &#10045;.User should be not create a new account and be given a warning(file:///Users/macbookair/Desktop/javaEU2/TacxAssignment/src/test/resources/features/blabla.feature:8)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-5" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.tacx.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.842</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>screenshot</a>
-      <a href="embeddings/embedding_-1157102348.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1157102348.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_2_578669140.html">Create a workout</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2975190419.html">@integration</a>
-       <a href="report-tag_3948266670.html">@createNewUser</a>
-       <a href="report-tag_2851644171.html">@maximize</a>
-</div>
-
-
-  <span class="lead-duration duration">30.244</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">User should able create an account and create a workout</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-7" class="collapse collapsable-details ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-8" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tacx.stepdefinitions.Hooks.setUp()</span>
-
-  <span class="lead-duration duration">1.996</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">Launch any browser and navigate to site</span>
-
-  <span class="lead-duration duration">2.340</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Select Create Account option</span>
-
-  <span class="lead-duration duration">0.262</span>
+  <span class="lead-duration duration">0.311</span>
 
 </div>
 
@@ -603,7 +316,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Enter details and click on sign up button to create new Tacx account</span>
 
-  <span class="lead-duration duration">12.256</span>
+  <span class="lead-duration duration">11.528</span>
 
 </div>
 
@@ -630,7 +343,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">Then</span>
   <span class="name">Verify the URL in App dashboard</span>
 
-  <span class="lead-duration duration">0.814</span>
+  <span class="lead-duration duration">0.746</span>
 
 </div>
 
@@ -657,7 +370,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Select &ldquo;Create workout&rdquo; menu item from left pane in dashboard</span>
 
-  <span class="lead-duration duration">0.421</span>
+  <span class="lead-duration duration">0.314</span>
 
 </div>
 
@@ -684,7 +397,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Select Power workout and then select distance as target and then select continue</span>
 
-  <span class="lead-duration duration">1.241</span>
+  <span class="lead-duration duration">1.140</span>
 
 </div>
 
@@ -711,7 +424,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Set distance to <span class="argument">12</span> KM and save the workout with title name <span class="argument">&quot;New Workout - 12 km&quot;</span></span>
 
-  <span class="lead-duration duration">6.683</span>
+  <span class="lead-duration duration">5.539</span>
 
 </div>
 
@@ -738,7 +451,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">Then</span>
   <span class="name">navigate to &ldquo;Workouts&rdquo; menu item and verify the created new Workout with mentioned title name</span>
 
-  <span class="lead-duration duration">6.098</span>
+  <span class="lead-duration duration">6.400</span>
 
 </div>
 
@@ -765,7 +478,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Logout from Account</span>
 
-  <span class="lead-duration duration">0.129</span>
+  <span class="lead-duration duration">0.125</span>
 
 </div>
 
@@ -792,7 +505,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -804,13 +517,13 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
     </div>
 
-    <div id="after-10" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.tacx.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.132</span>
+  <span class="lead-duration duration">0.180</span>
 
           </div>
 
@@ -831,26 +544,27 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2_578669140.html">Create a workout</a>
+      <a href="report-feature_1_578669140.html">Create a workout</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2975190419.html">@integration</a>
+       <a href="report-tag_4092886705.html">@wipUI</a>
        <a href="report-tag_3609485823.html">@loginWithSameUser</a>
        <a href="report-tag_2851644171.html">@maximize</a>
 </div>
 
 
-  <span class="lead-duration duration">18.179</span>
+  <span class="lead-duration duration">15.542</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">User should  with same credentials and double click on arrows</span>
+  <span class="name">User should login  with same credentials and double click on arrows</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -859,11 +573,11 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-5" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -875,13 +589,13 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
     </div>
 
-    <div id="before-12" class="inner-level collapse collapsable-details ">
+    <div id="before-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tacx.stepdefinitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">1.903</span>
+  <span class="lead-duration duration">1.899</span>
 
           </div>
 
@@ -898,7 +612,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -910,7 +624,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -918,7 +632,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">Given</span>
   <span class="name">Launch any browser and navigate to site</span>
 
-  <span class="lead-duration duration">1.751</span>
+  <span class="lead-duration duration">1.883</span>
 
 </div>
 
@@ -945,7 +659,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">When</span>
   <span class="name">User enter the same credentials</span>
 
-  <span class="lead-duration duration">4.437</span>
+  <span class="lead-duration duration">4.643</span>
 
 </div>
 
@@ -972,7 +686,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">Then</span>
   <span class="name">Verify the URL in App dashboard</span>
 
-  <span class="lead-duration duration">0.963</span>
+  <span class="lead-duration duration">0.531</span>
 
 </div>
 
@@ -999,7 +713,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Select &ldquo;Create workout&rdquo; menu item from left pane in dashboard</span>
 
-  <span class="lead-duration duration">0.379</span>
+  <span class="lead-duration duration">0.334</span>
 
 </div>
 
@@ -1026,7 +740,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Select Power workout and then select distance as target and then select continue</span>
 
-  <span class="lead-duration duration">1.629</span>
+  <span class="lead-duration duration">1.011</span>
 
 </div>
 
@@ -1053,7 +767,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">User right click on the arrow up button</span>
 
-  <span class="lead-duration duration">2.639</span>
+  <span class="lead-duration duration">1.625</span>
 
 </div>
 
@@ -1080,7 +794,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Set distance to <span class="argument">12</span> KM and save the workout with title name <span class="argument">&quot;New Workout - 12 km&quot;</span></span>
 
-  <span class="lead-duration duration">6.165</span>
+  <span class="lead-duration duration">5.311</span>
 
 </div>
 
@@ -1107,7 +821,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">Then</span>
   <span class="name">navigate to &ldquo;Workouts&rdquo; menu item and verify the created new Workout with mentioned title name</span>
 
-  <span class="lead-duration duration">0.098</span>
+  <span class="lead-duration duration">0.101</span>
 
 </div>
 
@@ -1134,7 +848,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Logout from Account</span>
 
-  <span class="lead-duration duration">0.118</span>
+  <span class="lead-duration duration">0.103</span>
 
 </div>
 
@@ -1161,7 +875,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1173,13 +887,13 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
     </div>
 
-    <div id="after-14" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.tacx.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.134</span>
+  <span class="lead-duration duration">0.173</span>
 
           </div>
 
@@ -1200,23 +914,23 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2_578669140.html">Create a workout</a>
+      <a href="report-feature_1_578669140.html">Create a workout</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2975190419.html">@integration</a>
-       <a href="report-tag_2368634098.html">@createNewUserInvalidName</a>
        <a href="report-tag_4092886705.html">@wipUI</a>
+       <a href="report-tag_2368634098.html">@createNewUserInvalidName</a>
        <a href="report-tag_2851644171.html">@maximize</a>
 </div>
 
 
-  <span class="lead-duration duration">4.834</span>
+  <span class="lead-duration duration">23.124</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -1229,11 +943,11 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   </span>
   <div class="description indention"></div>
 
-  <div id="element-15" class="collapse collapsable-details  in ">
+  <div id="element-9" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1245,13 +959,13 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
     </div>
 
-    <div id="before-16" class="inner-level collapse collapsable-details ">
+    <div id="before-10" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tacx.stepdefinitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">1.848</span>
+  <span class="lead-duration duration">1.806</span>
 
           </div>
 
@@ -1268,7 +982,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1280,7 +994,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1288,7 +1002,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">Given</span>
   <span class="name">Launch any browser and navigate to site</span>
 
-  <span class="lead-duration duration">1.714</span>
+  <span class="lead-duration duration">2.300</span>
 
 </div>
 
@@ -1315,7 +1029,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Select Create Account option</span>
 
-  <span class="lead-duration duration">0.171</span>
+  <span class="lead-duration duration">0.175</span>
 
 </div>
 
@@ -1342,7 +1056,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">And</span>
   <span class="name">Enter invalid name and others and click on sign up button to create new Tacx account</span>
 
-  <span class="lead-duration duration">2.913</span>
+  <span class="lead-duration duration">10.603</span>
 
 </div>
 
@@ -1369,7 +1083,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
   <span class="keyword indention">Then</span>
   <span class="name">User should be not create a new account and be given a warning</span>
 
-  <span class="lead-duration duration">0.036</span>
+  <span class="lead-duration duration">10.046</span>
 
 </div>
 
@@ -1380,15 +1094,37 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
-          <a>java.lang.AssertionError</a>
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
-      <div id="msg-18" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at com.tacx.stepdefinitions.CreateWorkout.userShouldBeNotCreateANewAccountAndBeGivenAWarning(CreateWorkout.java:168)
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#errorMessage&quot;}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-van-Macbook.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/hw/3v5b4b751n9...}, goog:chromeOptions: {debuggerAddress: localhost:50538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2fffe4b7a063384256cad2e97dcddfe1
+*** Element info: {Using=css selector, value=#errorMessage}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
+	at com.tacx.stepdefinitions.CreateWorkout.userShouldBeNotCreateANewAccountAndBeGivenAWarning(CreateWorkout.java:171)
 	at &#10045;.User should be not create a new account and be given a warning(file:///Users/macbookair/Desktop/javaEU2/TacxAssignment/src/test/resources/features/createWorkout.feature:33)
 </pre>
       </div>
@@ -1413,7 +1149,7 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-19">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-13">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1425,13 +1161,13 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
     </div>
 
-    <div id="after-19" class="inner-level collapse collapsable-details ">
+    <div id="after-13" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.tacx.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">2.429</span>
+  <span class="lead-duration duration">0.693</span>
 
           </div>
 
@@ -1442,15 +1178,15 @@ Session ID: ee562dd3b0d7fc5fa667ae6766f68dde
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-20" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-14" class="collapsable-control">
       <a>screenshot</a>
-      <a href="embeddings/embedding_1977338507.png" download target="_blank">
+      <a href="embeddings/embedding_-1157102348.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-20" class="collapse collapsable-details ">
+    <div id="embedding-14" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1977338507.png">
+        <img src="embeddings/embedding_-1157102348.png">
       </div>
     </div>
   </div>

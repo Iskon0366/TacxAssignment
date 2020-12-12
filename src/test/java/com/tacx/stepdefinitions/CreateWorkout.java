@@ -21,6 +21,7 @@ public class CreateWorkout {
     Create create = new Create();
     WorkoutsPage workoutsPage = new WorkoutsPage();
     String titleCheck="";
+    static String emailGenerated;
 
     @Given("Launch any browser and navigate to site")
     public void launch_any_browser_and_navigate_to_site() {
@@ -38,8 +39,11 @@ public class CreateWorkout {
     @Then("Enter details and click on sign up button to create new Tacx account")
     public void enter_details_and_click_on_sign_up_button_to_create_new_tacx_account() {
 
+        emailGenerated = BrowserUtils.emailGenerator();
+        System.out.println("emailGenerated = " + emailGenerated);
+
         signupPage.firstNameSignupTBox.sendKeys(ConfigurationReader.get("UserName"));
-        signupPage.emailSignupTBox.sendKeys(ConfigurationReader.get("UserEmail"));
+        signupPage.emailSignupTBox.sendKeys(emailGenerated);
         signupPage.passwordSignupTBox.sendKeys(ConfigurationReader.get("UserPassword"));
         signupPage.repeatPasswordSignupTBox.sendKeys(ConfigurationReader.get("UserPassword"));
         signupPage.acceptTermsCBox.click();
@@ -132,7 +136,7 @@ public class CreateWorkout {
 
     @When("User enter the same credentials")
     public void userEnterTheSameCredentials() {
-        loginPage.emailLoginBox.sendKeys(ConfigurationReader.get("UserEmail"));
+        loginPage.emailLoginBox.sendKeys(emailGenerated);
         loginPage.passwordLoginBox.sendKeys(ConfigurationReader.get("UserPassword"),Keys.ENTER);
         BrowserUtils.waitForInvisibility(signupPage.loadingIndicator, 15);
     }
@@ -143,8 +147,7 @@ public class CreateWorkout {
         actions = new Actions(Driver.get());
         actions.contextClick(create.distanceArrowUp).perform();
         actions.moveToElement(create.distanceArrowUp).pause(2).contextClick(create.distanceArrowUp).perform();
-        BrowserUtils.waitFor(2);
-        actions.sendKeys(Keys.ESCAPE).perform();
+        BrowserUtils.waitFor(1);
 
         }
 
@@ -152,7 +155,7 @@ public class CreateWorkout {
     @And("Enter invalid name and others and click on sign up button to create new Tacx account")
     public void enterInvalidNameAndOthersAndClickOnSignUpButtonToCreateNewTacxAccount() {
         signupPage.firstNameSignupTBox.sendKeys(ConfigurationReader.get("InvalidUserName"));
-        signupPage.emailSignupTBox.sendKeys(ConfigurationReader.get("UserEmail2"));
+        signupPage.emailSignupTBox.sendKeys(BrowserUtils.emailGenerator());
         signupPage.passwordSignupTBox.sendKeys(ConfigurationReader.get("UserPassword2"));
         signupPage.repeatPasswordSignupTBox.sendKeys(ConfigurationReader.get("UserPassword2"));
         signupPage.acceptTermsCBox.click();

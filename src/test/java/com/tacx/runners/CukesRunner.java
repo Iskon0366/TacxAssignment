@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/tacx/stepdefinitions",
         dryRun = false,
-        tags = "@smoke",
+        tags = "@integration",
         publish = true
 )
 

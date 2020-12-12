@@ -108,6 +108,7 @@ public class TacxApiCollection {
         response = given().contentType(ContentType.JSON)
                 .and().body(employee)
                 .when().post(path);
+        response.prettyPrint();
     }
 
     @And("body content should match with the given values")

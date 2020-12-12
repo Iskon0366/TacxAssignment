@@ -1,5 +1,6 @@
 package com.tacx.utilities;
 
+import com.github.javafaker.Faker;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -46,54 +47,11 @@ public class BrowserUtils {
         WebDriverWait wait = new WebDriverWait(Driver.get(), timeout);
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
-//
-//
-//    /**
-//     * waits for backgrounds processes on the browser to complete
-//     *
-//     * @param timeOutInSeconds
-//     */
-//    public static void waitForPageToLoad(long timeOutInSeconds) {
-//        ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
-//            public Boolean apply(WebDriver driver) {
-//                return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-//            }
-//        };
-//        try {
-//            WebDriverWait wait = new WebDriverWait(Driver.get(), timeOutInSeconds);
-//            wait.until(expectation);
-//        } catch (Throwable error) {
-//            error.printStackTrace();
-//        }
-//    }
-//
-//
-//    /**
-//     * Verifies whether the element is displayed on page
-//     *
-//     * @param element
-//     * @throws AssertionError if the element is not found or not displayed
-//     */
-//    public static void verifyElementDisplayed(WebElement element) {
-//        try {
-//            Assert.assertTrue("Element not visible: " + element, element.isDisplayed());
-//        } catch (NoSuchElementException e) {
-//            e.printStackTrace();
-//            Assert.fail("Element not found: " + element);
-//
-//        }
-//    }
-//
-//    /**
-//     *  checks that an element is present on the DOM of a page. This does not
-//     *    * necessarily mean that the element is visible.
-//     * @param by
-//     * @param time
-//     */
-//    public static void waitForPresenceOfElement(By by, long time) {
-//        new WebDriverWait(Driver.get(), time).until(ExpectedConditions.presenceOfElementLocated(by));
-//    }
-//
+
+    public static String emailGenerator() {
+        Faker faker = new Faker();
+        return faker.internet().emailAddress();
+    }
 
 
 }

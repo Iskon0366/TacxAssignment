@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Blabla
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.137 s <<< FAILURE! - in Blabla
-User should not able to create an account with invalid name(Blabla)  Time elapsed: 22.137 s  <<< FAILURE!
-java.lang.AssertionError
-
