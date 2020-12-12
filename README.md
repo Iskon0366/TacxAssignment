@@ -1,7 +1,7 @@
 # TacxAssignment (UI + API)
 ##  Short descreption about the framework :
 I created the framework in Java as a **Cucumber/BDD** framework along with Gherkin language in feature files. I used **POM(Page Object Model)** and Singleton Design Patterns.
-It includes both testing -> **UI+API**
+It includes both type of testings -> **UI+API**
 
 ### Tools used :
 
