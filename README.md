@@ -8,7 +8,7 @@ It includes both type of testings -> **UI+API**
 Tools | Purpose
 ------------ | -------------
 Java | Main language
-Maven | Build anagement tool to manage dependencies
+Maven | Build management tool to manage dependencies
 Intellij | IDE
 Cucumber | BDD Framework (Added as a dependency and as a plugin)
 Gherkin | Used in feature files for scenarios (Added as plugin in IDE )
